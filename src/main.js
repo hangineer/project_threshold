@@ -4,8 +4,9 @@ import App from './App.vue'
 // Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "bootstrap"
-// import '@/css/bootstrap-custom.scss'; 
+// import '@/scss/bootstrap-custom.scss'; 
 //css-reset
 import "reset-css";
 
-createApp(App).mount('#app')
+
+createApp(App).mount('#app');

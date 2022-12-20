@@ -1,19 +1,25 @@
 <template>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<MainHeader/>
+<PlaceCard/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import Home from './components/Home.vue'
+import MainHeader from './components/commonComponents/MainHeader.vue';
+import PlaceCard from './components/childComponents/PlaceCard.vue';
 
 export default {
-  name: 'App',
+  // name: 'App',
   components: {
-    HelloWorld
+    // Home
+    MainHeader,
+    PlaceCard
   }
 }
 </script>
 
 <style>
+/* @import './assets/all'; */
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

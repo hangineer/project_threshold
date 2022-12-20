@@ -1,0 +1,77 @@
+<template>
+<div class="mx-auto h3 fw-bold text-center text-center">景點列表</div>
+<div class="container-fluid ms-3 my-2 d-flex justify-content-centers flex-wrap"> 
+    <div class="card mx-3 my-3" style="width: 18rem;" v-for="(item,key) in lists" :key="key">
+      <img class="card-img-top" style="height: 12rem;" :src="item.imgPath" :alt="item.title">
+      <div class="card-body">
+        <h5 class="card-title">{{ item.title }}</h5>
+        <p class="card-text text-truncate-2">{{ item.content }}</p>
+        <BrowseBtn/>
+      </div>
+    </div>
+</div>
+</template>
+<script>
+import BrowseBtn from './BrowseBtn.vue';
+export default({
+  data() {
+    return {
+     lists:[{
+      title:"駁二藝術特區",
+      content:"駁二藝術特區是一個橫跨臺灣高雄市鹽埕區和鼓山區的藝術園區 , 以「前衛、實驗、創新」為理念來打造國際藝術平台",
+      imgPath: require("../../../public/images/駁二.jpeg"),
+     },
+     { 
+      title:"衛武營國家藝術文化中心",
+      content:"衛武營國家藝術文化中心位於臺灣高雄市鳳山區，是全球最大單一屋頂綜合劇院，擁有亞洲最大管風琴，也是南臺灣一座國家級表演藝術場館",
+      imgPath:require("../../../public/images/衛武營國家藝術文化中心.jpeg"),
+    },
+    {
+      title:"高雄市壽山動物園",
+      content:"高雄市壽山動物園是高雄市的市立動物園，位於壽山東南麓，創立於1978年，當時設置於壽山西麓西子灣，為西子灣動物園；於1986年搬遷至壽山東南麓，改稱壽山動物園",
+      imgPath:require("../../../public/images/壽山動物園.jpeg"),
+    },
+    {
+      title:"淨園農場",
+      content:"淨園農場是高雄市唯一位於市區的農場，擁有獨一無二遼闊視野的觀機坪，南洋風格的園藝造景、花叢路徑，更多淨園農場的祕密等你來發掘！",
+      imgPath:require("../../../public/images/淨園農場.jpeg"),
+    },
+    {
+      title:"高雄旗津",
+      content:"旗津半島雖不大，周邊卻有許多吸睛景點，非常適合安排一日遊，而且有許多新奇體驗，例如搭渡輪過海、踩水玩沙、賞浪漫夕陽等特色玩法。",
+      imgPath:require("../../../public/images/高雄旗津.jpeg"),
+    },
+    {
+      title:"高雄市立圖書館總館",
+      content:"2017年初正式營運的高雄市立圖書館總館（簡稱：高雄總圖）立刻成了現在市區的大地標，館內藏書數量非常豐富而且多元，空間感更是明亮寬敞，在南臺灣艷陽高照的夏天，這裡無疑是個適合享受閱讀時光+吹冷氣的好地方",
+      imgPath:require("../../../public/images/高雄市立圖書總館.jpeg"),
+    },
+    {
+      title:"SKM Park Outlets 高雄草衙",
+      content:"高雄SKM Park Outlets 高雄草衙，是南台灣高雄的一大亮點，裏頭集合了百貨商場、電影院、大型遊樂園，還有籃球場、棒球打擊場、保齡球和兒童遊戲區，是個吃喝玩樂全方位的地標，而且夜景超美，就像來到歐洲大街",
+      imgPath:require("../../../public/images/高雄草衙.jpeg"),
+    },
+    {
+      title:"老爸機場咖啡",
+      content:"老爸機場咖啡位於小港區明聖街，可以近距離觀賞飛機起飛、降落，無論是拍照打卡或是純欣賞都相當不錯，當天跟小夥伴一起欣賞浩瀚的飛機，邊聊著天，過了一個非常愜意的午後",
+      imgPath:require("../../../public/images/老爸機場咖啡.jpeg"),
+    },
+    ]
+    }
+  },
+  components: {
+  BrowseBtn
+  }
+})
+
+</script>
+<style scoped>
+.text-truncate-2{
+  display: -webkit-box; /* Chromium: Edge , Google Chrome & Safari*/ 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  -webkit-line-clamp:2;
+  -webkit-box-orient: vertical;
+  /* https://www.minwt.com/webdesign-dev/css/20296.html */
+}
+</style>
