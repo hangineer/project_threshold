@@ -11,7 +11,6 @@ import PlaceCard from './components/childComponents/PlaceCard.vue';
 export default {
   // name: 'App',
   components: {
-    // Home
     MainHeader,
     PlaceCard
   }

@@ -11,6 +11,7 @@
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
     "core-js": "^3.8.3",
+    "element-plus": "^2.2.27",
     "json-server": "^0.17.1",
     "node-sass": "^8.0.0",
     "reset-css": "^5.0.1",

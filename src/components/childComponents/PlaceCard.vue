@@ -1,7 +1,7 @@
 <template>
 <div class="mx-auto h3 fw-bold text-center text-center">景點列表</div>
 <div class="container-fluid ms-3 my-2 d-flex justify-content-centers flex-wrap"> 
-    <div class="card mx-3 my-3" style="width: 18rem;" v-for="(item,key) in lists" :key="key">
+    <div class="card mx-3 my-3" style="width: 18rem;" v-for="(item,key) in articles" :key="key">
       <img class="card-img-top" style="height: 12rem;" :src="item.imgPath" :alt="item.title">
       <div class="card-body">
         <h5 class="card-title">{{ item.title }}</h5>
@@ -16,7 +16,8 @@ import BrowseBtn from './BrowseBtn.vue';
 export default({
   data() {
     return {
-     lists:[{
+      //todo 用打API的方式
+     articles:[{
       title:"駁二藝術特區",
       content:"駁二藝術特區是一個橫跨臺灣高雄市鹽埕區和鼓山區的藝術園區 , 以「前衛、實驗、創新」為理念來打造國際藝術平台",
       imgPath: require("../../../public/images/駁二.jpeg"),
