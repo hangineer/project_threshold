@@ -1,7 +1,6 @@
 <template>
-  <!-- todo 圖片為何不能寫路徑 -->
-<div class="mx-auto h3 fw-bold text-center text-center">景點列表</div>
-<div class="container-fluid ms-3 my-2 d-flex justify-content-centers flex-wrap"> 
+  <div class="mx-auto mt-5 h3 fw-bold text-center">景點列表</div>
+  <div class="container my-2 d-flex justify-content-centers flex-wrap"> 
     <div class="card mx-3 my-3" style="width: 18rem;" v-for="(item,key) in places" :key="key">
       <img class="card-img-top" style="height: 12rem;" :src="item.imgPath" :alt="item.title">
       <div class="card-body">

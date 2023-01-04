@@ -1,5 +1,6 @@
 import { createApp } from 'vue';
 import App from './App.vue';
+// import router from './router';
 // import axios from 'axios';
 // Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -16,13 +17,4 @@ import "reset-css";
 //     // headers: { "X-Requested-With": "XMLHttpRequest" },
 //   });
 
-//element-plus
-// import ElementPlus from 'element-plus'
-// import 'element-plus/dist/index.css'
-// import { ElButton } from 'element-plus'
-// const  app = createApp(App)
-// app.use("ElementPlus")
-// app.use("ElButton")
-// app.use("reset-css")
-// app.use("bootstrap")
 createApp(App).mount('#app');

@@ -1,14 +1,14 @@
-import Vue from "vue";
+// import Vue from "vue";
 import VueRouter from "vue-router";
-// import App from "./App.vue";
-Vue.use(VueRouter);
-import AddPlace from "@/pages/AddPlace.vue"
-import Detail from "@/pages/Detail.vue"
+// Vue.use(VueRouter);
+import AddPlace from "@/pages/AddPlace.vue";
+// import PlaceDetail from "@/pages/PlaceDetail.vue";
+import App from "../App.vue";
 const routes = [
     {
       path: "/",
-      name: "Admin",
-      component: Admin,
+      name: "App",
+      component: App,
     },
     //訂單相關
     {
@@ -27,12 +27,12 @@ const routes = [
     //       next();
     //     }
     //   },
-    }
+    },
     //產品相關
     {
-      path: "/detail",
-      name: "Detail",
-      component: Detail,
+      // path: "/detail",
+      // name: "Detail",
+      // component: Detail,
     //   beforeEnter: (to, from, next) => {
     //     if (JSON.parse(sessionStorage.getItem("userData")).role == "user") {
     //       console.log("無法修改訂單");
@@ -41,16 +41,6 @@ const routes = [
     //       next();
     //     }
     //   },
-    },
-    {
-      path: "/product/:id",
-      name: "productInfo",
-      component: productInfo,
-    },
-    {
-      path: "/addProduct",
-      name: "AddProduct",
-      component: AddProduct,
     }
   ];
   
